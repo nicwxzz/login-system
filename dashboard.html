@@ -1,1 +1,84 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Painel — VERO</title>
+<meta name="description" content="Painel da conta VERO." />
+<link rel="stylesheet" href="style.css" />
+</head>
+<body>
+<a class="skip-link" href="#main-content">Pular para o conteúdo</a>
 
+<div class="dash-shell">
+
+  <header class="dash-header">
+    <div class="brand">
+      <span class="brand-mark" aria-hidden="true">V</span>
+      <span class="brand-name">Vero</span>
+    </div>
+
+    <div class="dash-header-actions">
+      <div class="dash-user">
+        <span class="avatar" id="user-avatar" aria-hidden="true"></span>
+        <span class="dash-user-text">
+          <span class="dash-user-name" id="user-name">—</span>
+          <span class="dash-user-email" id="user-email">—</span>
+        </span>
+      </div>
+      <button class="btn btn-ghost" id="logout-button" type="button">
+        <span class="btn-label">Sair</span>
+        <span class="btn-spinner" aria-hidden="true"></span>
+      </button>
+    </div>
+  </header>
+
+  <main class="dash-main" id="main-content">
+
+    <section class="welcome-card">
+      <p class="welcome-eyebrow">Painel da conta</p>
+      <h1 class="welcome-title">Olá, <span id="welcome-name">—</span> 👋</h1>
+      <p class="welcome-sub">Este é o seu espaço na VERO. Em breve, mais recursos vão aparecer por aqui.</p>
+    </section>
+
+    <div class="grid-cards">
+      <div class="info-card">
+        <p class="info-card-label">E-mail</p>
+        <p class="info-card-value" id="account-email">—</p>
+      </div>
+      <div class="info-card">
+        <p class="info-card-label">Conta criada em</p>
+        <p class="info-card-value" id="account-created">—</p>
+      </div>
+      <div class="info-card">
+        <p class="info-card-label">Status</p>
+        <p class="info-card-value">
+          <span class="status-pill">Ativa</span>
+        </p>
+      </div>
+    </div>
+
+    <h2 class="section-title">Em construção</h2>
+    <div class="placeholder-grid">
+      <div class="placeholder-card">
+        <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="16" rx="2"/><path d="M3 9h18M8 4v5"/></svg>
+        Atividade recente
+      </div>
+      <div class="placeholder-card">
+        <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2a10 10 0 1 0 10 10"/><path d="M12 6v6l4 2"/></svg>
+        Sessões ativas
+      </div>
+      <div class="placeholder-card">
+        <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M12 15a4 4 0 0 0 4-4V7a4 4 0 1 0-8 0v4a4 4 0 0 0 4 4Z"/><path d="M19 11v1a7 7 0 0 1-14 0v-1M12 19v3"/></svg>
+        Preferências de segurança
+      </div>
+    </div>
+
+  </main>
+
+</div>
+
+<script src="js/main.js"></script>
+<script src="js/dashboard.js"></script>
+</body>
+</html>

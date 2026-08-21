@@ -1,1 +1,135 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Entrar — VERO</title>
+<meta name="description" content="Acesse sua conta VERO com segurança." />
+<link rel="stylesheet" href="style.css" />
+</head>
+<body>
+<a class="skip-link" href="#login-form">Pular para o formulário</a>
 
+<div class="auth-shell">
+
+  <!-- Coluna do formulário -->
+  <main class="auth-form-side">
+    <div class="auth-form-wrap">
+
+      <div class="brand">
+        <span class="brand-mark" aria-hidden="true">V</span>
+        <span class="brand-name">Vero</span>
+      </div>
+
+      <h1 class="auth-heading">Bem-vindo de volta</h1>
+      <p class="auth-subtext">Entre com sua conta para continuar de onde parou.</p>
+
+      <form class="form" id="login-form" novalidate>
+
+        <div class="field" id="field-email">
+          <label class="field-label" for="email">E-mail</label>
+          <div class="input-wrap">
+            <input
+              class="input"
+              type="email"
+              id="email"
+              name="email"
+              autocomplete="email"
+              placeholder="voce@empresa.com"
+              aria-describedby="email-message"
+            />
+          </div>
+          <p class="field-message" id="email-message"></p>
+        </div>
+
+        <div class="field" id="field-password">
+          <div class="field-row-between">
+            <label class="field-label" for="password">Senha</label>
+            <a class="link-inline" href="#" data-forgot-password>Esqueci minha senha</a>
+          </div>
+          <div class="input-wrap">
+            <input
+              class="input has-toggle"
+              type="password"
+              id="password"
+              name="password"
+              autocomplete="current-password"
+              placeholder="Digite sua senha"
+              aria-describedby="password-message"
+            />
+            <button
+              type="button"
+              class="toggle-visibility"
+              data-toggle-password="password"
+              aria-pressed="false"
+              aria-label="Mostrar senha"
+            >
+              <svg class="icon-on" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M1 12s4-7 11-7 11 7 11 7-4 7-11 7-11-7-11-7Z"/><circle cx="12" cy="12" r="3"/></svg>
+              <svg class="icon-off" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M17.94 17.94A10.94 10.94 0 0 1 12 19c-7 0-11-7-11-7a21.6 21.6 0 0 1 5.06-5.94M9.9 4.24A10.4 10.4 0 0 1 12 4c7 0 11 7 11 7a21.6 21.6 0 0 1-2.61 3.61M14.12 14.12a3 3 0 1 1-4.24-4.24"/><line x1="1" y1="1" x2="23" y2="23"/></svg>
+            </button>
+          </div>
+          <p class="field-message" id="password-message"></p>
+        </div>
+
+        <button type="submit" class="btn btn-primary" id="login-submit">
+          <span class="btn-label">Entrar</span>
+          <span class="btn-spinner" aria-hidden="true"></span>
+        </button>
+      </form>
+
+      <p class="form-footer">
+        Não tem uma conta? <a class="link-inline" href="cadastro.html">Criar conta</a>
+      </p>
+
+    </div>
+  </main>
+
+  <!-- Coluna visual -->
+  <aside class="auth-visual-side" aria-hidden="true">
+    <div class="visual-top">
+      <p class="visual-eyebrow">Acesso seguro</p>
+      <h2 class="visual-heading">Uma camada a mais de confiança entre você e seus dados.</h2>
+      <p class="visual-subtext">Autenticação pensada para ser rápida, sem abrir mão da segurança.</p>
+    </div>
+
+    <div class="visual-mid">
+      <svg class="verify-net" viewBox="0 0 320 260" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <line class="link-line" x1="160" y1="130" x2="60" y2="60" stroke="var(--panel-line)" stroke-width="1.5"/>
+        <line class="link-line" x1="160" y1="130" x2="260" y2="60" stroke="var(--panel-line)" stroke-width="1.5"/>
+        <line class="link-line" x1="160" y1="130" x2="50" y2="180" stroke="var(--panel-line)" stroke-width="1.5"/>
+        <line class="link-line" x1="160" y1="130" x2="270" y2="180" stroke="var(--panel-line)" stroke-width="1.5"/>
+        <line class="link-line" x1="160" y1="130" x2="160" y2="220" stroke="var(--panel-line)" stroke-width="1.5"/>
+        <circle cx="160" cy="130" r="34" fill="var(--panel-bg-alt)" stroke="var(--panel-accent)" stroke-width="1.5"/>
+        <path d="M148 130l8 8 16-18" stroke="var(--panel-accent)" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/>
+        <circle class="pulse" cx="60" cy="60" r="5" fill="var(--panel-accent)"/>
+        <circle class="pulse pulse-d1" cx="260" cy="60" r="5" fill="var(--panel-accent)"/>
+        <circle class="pulse pulse-d2" cx="50" cy="180" r="5" fill="var(--panel-accent)"/>
+        <circle class="pulse pulse-d3" cx="270" cy="180" r="5" fill="var(--panel-accent)"/>
+        <circle class="pulse" cx="160" cy="220" r="5" fill="var(--panel-accent)"/>
+      </svg>
+    </div>
+
+    <div class="visual-bottom">
+      <ul class="trust-list">
+        <li class="trust-item">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>
+          Verificação em duas etapas
+        </li>
+        <li class="trust-item">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>
+          Sessões monitoradas em tempo real
+        </li>
+        <li class="trust-item">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>
+          Criptografia de ponta a ponta
+        </li>
+      </ul>
+    </div>
+  </aside>
+
+</div>
+
+<script src="js/main.js"></script>
+<script src="js/login.js"></script>
+</body>
+</html>
